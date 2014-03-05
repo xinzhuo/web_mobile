@@ -64,7 +64,7 @@ if(!isset($_SESSION['user_id'])){
             <fieldset>
                 <legend>Log In</legend>
 
-                <label for="username">Username:</label>
+                <label for="username">E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <input type="text" id="username" name="username"
                 value="<?php if(!empty($user_username)) echo $user_username; ?>" />
 
@@ -84,7 +84,7 @@ if(!isset($_SESSION['user_id'])){
 	<br>
 	E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="email" size = "15">
 	<br>
-	Password: <input type="password" name="password" size = "15">
+	Password: &nbsp; <input type="password" name="password" size = "15">
 	</fieldset>
 	<input type="submit">
 	</form>	
