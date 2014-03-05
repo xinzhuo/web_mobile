@@ -35,10 +35,10 @@ if(!isset($_SESSION['user_id'])){
 		$home_url = 'project2.php';
                 header('Location: '.$home_url);
             }else{
-                $error_msg = 'Sorry, you must enter a valid username and password to log in.1';
+                $error_msg = 'Sorry, you must enter a valid username and password to log in.';
             }
         }else{
-            $error_msg = 'Sorry, you must enter a valid username and password to log in.2';
+            $error_msg = 'Sorry, you must enter a valid username and password to log in.';
         }
     }
 }else{
@@ -49,10 +49,11 @@ if(!isset($_SESSION['user_id'])){
 <html>
     <head>
         <title>Log In</title>
-       
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+
     <body>
-        <h3>Log In</h3>
+        <h3>GRE Vocab Questions</h3>
       
         <?php
         if(!isset($_SESSION['user_id'])){

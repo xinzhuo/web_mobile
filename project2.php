@@ -19,6 +19,8 @@ if(!isset($_SESSION['user_id'])){
 if(isset($_SESSION['username'])){
     echo 'You are Logged as '.$_SESSION['username'].'<br/>';
     echo '<a href="project3.php"> Log Out('.$_SESSION['username'].')</a>';
+    echo "<br>";
+    echo "<br>";
 }
 
 ?>
@@ -94,6 +96,7 @@ mysqli_close($con);
 ?>
 <div id="poll">
 <form>
+<br>
 Choose A: 
 <input type="radio" name="vote" value="1" onclick="getVote(this.value, <?php echo $current_id; ?>)">
 B:
@@ -107,20 +110,13 @@ E:
 </form>
 </div>
 
-
 <form method="post" action="update_progress.php">
-  <input type="submit" name="identifier" value="last">
+  <input class="myButton" type="submit" name="identifier" value="last">
+  <input class="myButton" type="submit" name="identifier" value="next">
 </form>
-<form method="post" action="update_progress.php">
-  <input type="submit" name="identifier" value="next">
-</form>
-
 
 <div id="output">
-
-<a href="vocab.php" target="_blank">suck it</a>
-
-
+<a href="vocab.php" target="_blank">Click to learn these words</a>
 </div>
 
 </body>
